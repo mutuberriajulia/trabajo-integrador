@@ -1,53 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Norteñito</title>
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 El Norteñito
             </a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menuPrincipal"
-                aria-controls="menuPrincipal"
-                aria-expanded="false"
-                aria-label="Abrir menú">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div
-                class="collapse navbar-collapse"
-                id="menuPrincipal">
+            <div class="collapse navbar-collapse" id="menuPrincipal">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a
-                            class="nav-link active"
-                            aria-current="page"
-                            href="index.html">
+                        <a class="nav-link active" aria-current="page" href="index.html">
                             Inicio
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a
-                            class="nav-link"
-                            href="categorias.html">
+                        <a class="nav-link" href="categorias.html">
                             Categorías
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a
-                            class="nav-link"
-                            href="contacto.html">
+                        <a class="nav-link" href="contacto.html">
                             Contacto
                         </a>
                     </li>
@@ -57,38 +42,19 @@
     </nav>
 
     <section id="productosDestacados">
-        <div
-            id="carruselProductos"
-            class="carousel slide"
-            data-bs-ride="carousel">
+        <div id="carruselProductos" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button
-                    type="button"
-                    data-bs-target="#carruselProductos"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Producto 1">
+                <button type="button" data-bs-target="#carruselProductos" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Producto 1">
                 </button>
-                <button
-                    type="button"
-                    data-bs-target="#carruselProductos"
-                    data-bs-slide-to="1"
-                    aria-label="Producto 2">
+                <button type="button" data-bs-target="#carruselProductos" data-bs-slide-to="1" aria-label="Producto 2">
                 </button>
-                <button
-                    type="button"
-                    data-bs-target="#carruselProductos"
-                    data-bs-slide-to="2"
-                    aria-label="Producto 3">
+                <button type="button" data-bs-target="#carruselProductos" data-bs-slide-to="2" aria-label="Producto 3">
                 </button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img
-                        src="imagenes/Ceviche-peruano.jpg"
-                        class="d-block w-100"
-                        alt="Ceviche">
+                    <img src="imagenes/Ceviche-peruano.jpg" class="d-block w-100" alt="Ceviche">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>
                             Ceviche
@@ -99,10 +65,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img
-                        src="imagenes/Lomo-saltado.jpg"
-                        class="d-block w-100"
-                        alt="Lomo saltado de carne">
+                    <img src="imagenes/Lomo-saltado.jpg" class="d-block w-100" alt="Lomo saltado de carne">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>
                             Lomo saltado de carne
@@ -113,10 +76,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img
-                        src="imagenes/Causa-Limena.jpg"
-                        class="d-block w-100"
-                        alt="Causa Limeña">
+                    <img src="imagenes/Causa-Limena.jpg" class="d-block w-100" alt="Causa Limeña">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>
                             Causa Limeña
@@ -127,27 +87,17 @@
                     </div>
                 </div>
             </div>
-            <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carruselProductos"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselProductos"
                 data-bs-slide="prev">
-                <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true">
+                <span class="carousel-control-prev-icon" aria-hidden="true">
                 </span>
                 <span class="visually-hidden">
                     Anterior
                 </span>
             </button>
-            <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carruselProductos"
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselProductos"
                 data-bs-slide="next">
-                <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true">
+                <span class="carousel-control-next-icon" aria-hidden="true">
                 </span>
                 <span class="visually-hidden">
                     Siguiente
@@ -168,9 +118,7 @@
                 Descubrí nuestro menú y disfrutá de entrantes,
                 platos principales, postres y mucho más.
             </p>
-            <a
-                href="categorias.html"
-                class="btn btn-primary btn-lg mt-3">
+            <a href="categorias.html" class="btn btn-primary btn-lg mt-3">
                 Ver nuestro menú
             </a>
         </section>
@@ -217,30 +165,18 @@
     </main>
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
-            <h5>
-                El Norteñito
-            </h5>
-            <p>
-                Restaurante de comida casera peruana
-            </p>
-            <p>
-                La Plata
-            </p>
-            <p>
-                Teléfono: 221-123-4567
-            </p>
-            <p>
-                Email: contacto@elnorteñito.com
-            </p>
+            <h5>El Norteñito</h5>
+            <p>Restaurante de comida casera peruana</p>
+            <p>La Plata</p>
+            <p>Teléfono: 221-123-4567</p>
+            <p>Email: contacto@elnorteñito.com</p>
             <hr>
-            <p class="mb-0">
-                © 2026 El Norteñito
-            </p>
+            <p class="mb-0">© 2026 El Norteñito</p>
         </div>
     </footer>
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
     </script>
     <script src="script.js"></script>
 </body>
+
 </html>

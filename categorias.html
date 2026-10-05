@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías - El Norteñito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                El Norteñito
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- 'active' y 'aria-current' van aquí para esta página -->
+                        <a class="nav-link active" aria-current="page" href="categorias.html">
+                            Categorías
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-light py-5 text-center mb-4">
+        <div class="container">
+            <h1 class="fw-bold">Nuestro Menú por Categorías</h1>
+            <p class="lead text-muted">Explorá los sabores auténticos del norte peruano</p>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+
+        <section class="mb-5">
+            <h2 class="border-bottom pb-2 mb-4 text-primary">Entrantes</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/Ceviche-peruano.jpg" class="card-img-top" alt="Ceviche"
+                            style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Ceviche Norteño</h5>
+                            <p class="card-text text-muted">Pesca del día marinada en limón de pica, ají limo, cebolla
+                                morada, batata y choclo.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold fs-5 text-success">$12.000</span>
+                                <button class="btn btn-outline-primary btn-sm btn-detalle" data-bs-toggle="modal"
+                                    data-bs-target="#modalProducto" data-titulo="Ceviche Norteño"
+                                    data-imagen="imagenes/Ceviche-peruano.jpg"
+                                    data-descripcion="Pesca del día marinada en limón de pica, ají limo, cebolla morada, batata y choclo. Acompañado con cancha serrana."
+                                    data-descripcion-larga="Nuestro ceviche norteño es una explosión de sabores frescos y auténticos. La pesca del día se marina en jugo de limón de pica, mezclado con ají limo y cebolla morada, creando un equilibrio perfecto entre acidez y picante. Se sirve acompañado de batata y choclo, ofreciendo una experiencia culinaria que refleja la riqueza gastronómica del norte peruano."
+                                    data-cantidad-personas="2" data-tiempo-preparacion="20 minutos"
+                                    data-calorias="250 kcal" data-precio="$12.000">
+                                    Ver detalle
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">Agregar a la compra</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/Causa-Limena.jpg" class="card-img-top" alt="Causa Limeña"
+                            style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Causa Limeña</h5>
+                            <p class="card-text text-muted">Masa de papa amarilla sazonada con ají amarillo, rellena de
+                                atún, palta y mayonesa.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold fs-5 text-success">$10.000</span>
+                                <button class="btn btn-outline-primary btn-sm btn-detalle" data-bs-toggle="modal"
+                                    data-bs-target="#modalProducto" data-titulo="Causa Limeña"
+                                    data-imagen="imagenes/Causa-Limena.jpg"
+                                    data-descripcion="Masa de papa amarilla sazonada con ají amarillo, rellena de atún, palta y mayonesa."
+                                    data-descripcion-larga="La Causa Limeña es un plato típico peruano que consiste en una masa de papa amarilla sazonada con ají amarillo, rellena de atún, palta y mayonesa. Es una delicia que combina sabores frescos y auténticos, perfecta para disfrutar en cualquier ocasión."
+                                    data-cantidad-personas="1" data-tiempo-preparacion="15 minutos"
+                                    data-calorias="300 kcal" data-precio="$10.000">
+                                    Ver detalle
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">Agregar a la compra</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/antichucho-peruano.jpg" class="card-img-top" alt="Anticuchos de Corazón"
+                            style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Anticuchos de corazón con rachi</h5>
+                            <p class="card-text text-muted">Carne maserada de corazon con rachi, papa, batata, choclo y
+                                salsas.
+                            </p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold fs-5 text-success">$10.000</span>
+                                <button class="btn btn-outline-primary btn-sm btn-detalle" data-bs-toggle="modal"
+                                    data-bs-target="#modalProducto" data-titulo="Anticuchos de corazón con rachi"
+                                    data-imagen="imagenes/antichucho-peruano.jpg"
+                                    data-descripcion="Carne maserada de corazon con rachi, papa, batata, choclo y salsas."
+                                    data-descripcion-larga="Los anticuchos de corazón con rachi son un plato típico peruano que consiste en carne maserada de corazon con rachi, papa, batata, choclo y salsas. Es una delicia que combina sabores frescos y auténticos, perfecta para disfrutar en cualquier ocasión."
+                                    data-cantidad-personas="2" data-tiempo-preparacion="20 minutos"
+                                    data-calorias="300 kcal" data-precio="$10.000">
+                                    Ver detalle
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">Agregar a la compra</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="border-bottom pb-2 mb-4 text-primary">Platos Principales</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/Lomo-saltado.jpg" class="card-img-top" alt="Lomo Saltado"
+                            style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Lomo Saltado</h5>
+                            <p class="card-text text-muted">Tiras de lomo salteadas al wok con cebolla, tomate, papas
+                                fritas y arroz blanco.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold fs-5 text-success">$18.000</span>
+                                <button class="btn btn-outline-primary btn-sm btn-detalle" data-bs-toggle="modal"
+                                    data-bs-target="#modalProducto" data-titulo="Lomo Saltado"
+                                    data-imagen="imagenes/Lomo-saltado.jpg"
+                                    data-descripcion="Tiras de lomo salteadas al wok con cebolla, tomate, papas fritas y arroz blanco."
+                                    data-descripcion-larga="El Lomo Saltado es un plato emblemático de la gastronomía peruana que combina influencias chinas y peruanas. Consiste en tiras de lomo de res salteadas al wok con cebolla, tomate, papas fritas y arroz blanco. Este plato ofrece una explosión de sabores y texturas, siendo una opción deliciosa y reconfortante para cualquier ocasión."
+                                    data-cantidad-personas="2" data-tiempo-preparacion="30 minutos"
+                                    data-calorias="800 kcal" data-precio="$18.000">
+                                    Ver detalle
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">Agregar a la compra</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/seco-de-cordero-con-frijoles.jpg" class="card-img-top" alt="Seco de Cordero"
+                            style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Seco de Cordero a la Norteña</h5>
+                            <p class="card-text text-muted">Guiso de cordero en salsa de cilantro y chicha de jora,
+                                servido con frijoles y arroz.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold fs-5 text-success">$20.000</span>
+                                <button class="btn btn-outline-primary btn-sm btn-detalle" data-bs-toggle="modal"
+                                    data-bs-target="#modalProducto" data-titulo="Seco de Cordero a la Norteña"
+                                    data-imagen="imagenes/seco-de-cordero-con-frijoles.jpg"
+                                    data-descripcion="Guiso de cordero en salsa de cilantro y chicha de jora, servido con frijoles y arroz."
+                                    data-descripcion-larga="El Seco de Cordero a la Norteña es un plato tradicional peruano que consiste en un guiso de cordero en salsa de cilantro y chicha de jora, servido con frijoles y arroz. Es una delicia que combina sabores auténticos y una textura irresistible."
+                                    data-cantidad-personas="2" data-tiempo-preparacion="30 minutos"
+                                    data-calorias="1100 kcal" data-precio="$20.000">
+                                    Ver detalle
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">Agregar a la compra</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/arroz-chaufa-peruano.jpg" class="card-img-top" alt="Arroz chaufa"
+                            style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Arroz chaufa de pollo</h5>
+                            <p class="card-text text-muted">Arroz frito con pollo, verduras, huevo y especias peruanas.
+                            </p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold fs-5 text-success">$15.000</span>
+                                <button class="btn btn-outline-primary btn-sm btn-detalle" data-bs-toggle="modal"
+                                    data-bs-target="#modalProducto" data-titulo="Arroz chaufa de pollo"
+                                    data-imagen="imagenes/arroz-chaufa-peruano.jpg"
+                                    data-descripcion="Arroz frito con pollo, verduras, huevo y especias peruanas."
+                                    data-descripcion-larga="El Arroz chaufa de pollo es un plato tradicional peruano que consiste en arroz frito con pollo, verduras, huevo y especias peruanas. Es una delicia que combina sabores frescos y auténticos, perfecta para disfrutar en cualquier ocasión."
+                                    data-cantidad-personas="2" data-tiempo-preparacion="20 minutos"
+                                    data-calorias="900 kcal" data-precio="$15.000">
+                                    Ver detalle
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">Agregar a la compra</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="border-bottom pb-2 mb-4 text-primary">Postres</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/tres-leches.webp" class="card-img-top" alt="Tres Leches"
+                            style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Tres Leches</h5>
+                            <p class="card-text text-muted">Un postre tradicional hecho con tres tipos de leche,
+                                bizcocho y crema.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold fs-5 text-success">$7.000</span>
+                                <button class="btn btn-outline-primary btn-sm btn-detalle" data-bs-toggle="modal"
+                                    data-bs-target="#modalProducto" data-titulo="Tres Leches"
+                                    data-imagen="imagenes/tres-leches.webp"
+                                    data-descripcion="Un postre tradicional hecho con tres tipos de leche, bizcocho y crema."
+                                    data-descripcion-larga="El Tres Leches es un postre tradicional hecho con tres tipos de leche, bizcocho y crema. Es una delicia que combina sabores dulces y cremosos, perfecta para disfrutar en cualquier ocasión."
+                                    data-cantidad-personas="1" data-tiempo-preparacion="5 minutos"
+                                    data-calorias="400 kcal" data-precio="$7.000">
+                                    Ver detalle
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">Agregar a la compra</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/suspiro_limeno.jpg" class="card-img-top" alt="Suspiro Limeño"
+                            style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Suspiro Limeño</h5>
+                            <p class="card-text text-muted">Un postre peruano hecho con leche condensada, leche
+                                evaporada y crema de leche.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold fs-5 text-success">$8.000</span>
+                                <button class="btn btn-outline-primary btn-sm btn-detalle" data-bs-toggle="modal"
+                                    data-bs-target="#modalProducto" data-titulo="Suspiro Limeño"
+                                    data-imagen="imagenes/suspiro_limeno.jpg"
+                                    data-descripcion="Un postre peruano hecho con leche condensada, leche evaporada y crema de leche."
+                                    data-descripcion-larga="El Suspiro Limeño es un postre tradicional peruano que combina leche condensada, leche evaporada y crema de leche para crear una textura suave y dulce. Es un deleite para los amantes de los postres y una excelente manera de terminar una comida."
+                                    data-cantidad-personas="1" data-tiempo-preparacion="5 minutos"
+                                    data-calorias="300 kcal" data-precio="$8.000">
+                                    Ver detalle
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">Agregar a la compra</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/mazamorra-morada.jpg" class="card-img-top" alt="Mazamorra Morada"
+                            style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Mazamorra Morada</h5>
+                            <p class="card-text text-muted">Una deliciosa mazamorra morada, un postre tradicional
+                                peruano.
+                            </p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold fs-5 text-success">$6.000</span>
+                                <button class="btn btn-outline-primary btn-sm btn-detalle" data-bs-toggle="modal"
+                                    data-bs-target="#modalProducto" data-titulo="Mazamorra Morada"
+                                    data-imagen="imagenes/mazamorra-morada.jpg"
+                                    data-descripcion="Una deliciosa mazamorra morada, un postre tradicional peruano."
+                                    data-descripcion-larga="La Mazamorra Morada es un postre tradicional peruano hecho a base de maíz morado, frutas secas y especias. Su sabor dulce y su textura suave lo convierten en una opción deliciosa para disfrutar después de una comida o como un antojo dulce en cualquier momento del día."
+                                    data-cantidad-personas="1" data-tiempo-preparacion="5 minutos"
+                                    data-calorias="350 kcal" data-precio="$6.000">
+                                    Ver detalle
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">Agregar a la compra</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div class="modal fade" id="modalProducto" tabindex="-1" aria-labelledby="modalProductoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="modalProductoLabel">Detalle del Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-5 mb-3 mb-md-0">
+                            <img id="modalImagen" src="" class="img-fluid rounded shadow-sm" alt=""
+                                style="max-height: 280px; object-fit: cover; width: 100%;">
+                        </div>
+
+                        <div class="col-md-7">
+                            <p id="modalDescripcion" class="text-muted fw-bold mb-2"></p>
+                            <p id="modalDescripcionLarga" class="text-secondary small mb-3"></p>
+
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                    <span><i class="bi bi-people"></i> Porción para:</span>
+                                    <span class="fw-semibold"><span id="modalCantidadPersonas"></span> persona(s)</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                    <span><i class="bi bi-clock"></i> Tiempo de preparación:</span>
+                                    <span class="fw-semibold" id="modalTiempoPreparacion"></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                    <span><i class="bi bi-fire"></i> Calorías aprox.:</span>
+                                    <span class="fw-semibold" id="modalCalorias"></span>
+                                </li>
+                            </ul>
+
+                            <div class="d-flex justify-content-between align-items-center bg-light p-3 rounded">
+                                <span class="fw-bold fs-4 text-success" id="modalPrecio"></span>
+                                <button type="button" class="btn btn-primary">Agregar a la compra</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <h5>El Norteñito</h5>
+            <p>Restaurante de comida casera peruana</p>
+            <p>La Plata</p>
+            <p>Teléfono: 221-123-4567</p>
+            <p>Email: contacto@elnorteñito.com</p>
+            <hr>
+            <p class="mb-0">© 2026 El Norteñito</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
